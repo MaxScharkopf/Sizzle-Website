@@ -9,9 +9,9 @@
 
 <script>
 const SITE = {
-  youtubeId: "https://www.youtube.com/shorts/o9LmrFesyhw",                                   // paste your YouTube Short link or ID, e.g. "https://youtube.com/shorts/abc123XYZ"
+  youtubeId: "https://www.youtube.com/shorts/o9LmrFesyhw",                                  
   repoUrl: "https://github.com/MaxScharkopf/Sizzle-Website",
-  email: "your.name@csuci.edu",
+  email: "maxwell.scharkopf110@myci.csuci.edu",
   giscus: { repo: "MaxScharkopf/Sizzle-Website", repoId: "", category: "General", categoryId: "" }
 };
 </script>
@@ -269,7 +269,8 @@ const SITE = {
 </main>
 
 <script>
-  document.getElementById("repoLink").href = SITE.repoUrl;
+  const repoLink = document.getElementById("repoLink");
+if (repoLink) repoLink.href = SITE.repoUrl;
 
   let vid = SITE.youtubeId.trim();
   const m = vid.match(/(?:shorts\/|youtu\.be\/|[?&]v=|embed\/)([A-Za-z0-9_-]{11})/);
