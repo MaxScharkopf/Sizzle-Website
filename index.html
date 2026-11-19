@@ -175,7 +175,6 @@ const SITE = {
     <ul>
       <li>Recipe API Service, which gets recipes from <b>Spoonacular</b></li>
       <li>Grocery AI Service, which sends ingredients to <b>Claude</b> to clean up the grocery list</li>
-      <li>Recipe Import Service, which reads recipe data from a pasted URL (JSON-LD)</li>
       <li>Persistence Controller, which saves everything with <b>Core Data</b></li>
       <li>Keychain Helper, which stores the API key securely in the <b>iOS Keychain</b></li>
     </ul>
@@ -228,14 +227,13 @@ const SITE = {
   <tr><td>User testing</td><td>Add more color, make it customizable and export recipes</td></tr>
 </table>
 
-<!-- 5. Discussion & Future Work -->
+
 <h2 id="future">Discussion &amp; Future Work</h2>
 <h3>What I learned</h3>
 <ul>
   <li>How to organize a bigger SwiftUI app with MVVM so features don't get tangled together</li>
   <li>Core Data concurrency and migrating the data model as I added features</li>
   <li>How to write and tune prompts so an AI gives back consistent, usable output</li>
-  <li>Real-world data is messy. Every recipe website formats things differently.</li>
 </ul>
 
 <h3>Limitations</h3>
